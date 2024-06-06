@@ -11,6 +11,6 @@ jobs:
       - name: SimpleIOT test
         run: |
               cd /usr/testing
-              docker run -it --rm --env-file env.list --add-host usriappscansv:10.253.160.244 --volume /var/opt/hcl/appscansource/samples/simpleIOT/:/workspace/ appscan/appscan-src-cli:10.4.0 script /workspace/SimpleIOT.scan
+              ./script.sh
       - name: Print goodbye
         run: echo "Done - bye!"
