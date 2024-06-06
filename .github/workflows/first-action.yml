@@ -13,5 +13,6 @@ jobs:
               cd /var/opt/hcl/appscansource/samples/simpleIOT
               pwd
               ls -alh
+              /opt/hcl/appscansource/bin/appscansrccli scr SimpleIOT.scan
       - name: Print goodbye
         run: echo "Done - bye!"
