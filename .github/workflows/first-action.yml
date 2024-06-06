@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello World!"
+      - name: Get kernel version
+        run: uname -srm
       - name: Print goodbye
         run: echo "Done - bye!"
