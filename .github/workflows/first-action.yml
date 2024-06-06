@@ -10,9 +10,7 @@ jobs:
         run: uname -srm
       - name: SimpleIOT test
         run: |
-              cd /var/opt/hcl/appscansource/samples/simpleIOT
-              pwd
-              ls -alh
-              /opt/hcl/appscansource/bin/appscansrccli scr SimpleIOT.scan
+              cd /usr/testing
+              ./script.sh
       - name: Print goodbye
         run: echo "Done - bye!"
