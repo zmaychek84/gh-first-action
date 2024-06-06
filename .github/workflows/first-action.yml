@@ -8,5 +8,10 @@ jobs:
         run: echo "Hello World!"
       - name: Get kernel version
         run: uname -srm
+      - name: SimpleIOT test
+        run: |
+              cd /var/opt/hcl/appscansource/samples/simpleIOT
+              pwd
+              ll
       - name: Print goodbye
         run: echo "Done - bye!"
