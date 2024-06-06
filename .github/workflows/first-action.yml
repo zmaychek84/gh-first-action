@@ -2,7 +2,7 @@ name: First Workflow
 on: [workflow_dispatch] # manualy trigger the workflow
 jobs:
   first-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Print greeting
         run: echo "Hello World!"
