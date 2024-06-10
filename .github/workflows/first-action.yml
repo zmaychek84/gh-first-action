@@ -4,10 +4,6 @@ jobs:
   first-job:
     runs-on: self-hosted
     steps:
-      - name: Print greeting
-        run: echo "Hello World!"
-      - name: Get kernel version
-        run: uname -srm
       - name: SimpleIOT test
         run: |
               cd /usr/testing
