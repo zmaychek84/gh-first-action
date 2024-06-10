@@ -3,10 +3,14 @@ on: [workflow_dispatch] # manualy trigger the workflow
 jobs:
   first-job:
     runs-on: self-hosted
+    permissions:
+      security-events: write
     steps:
       - name: SimpleIOT test
         run: |
               cd /usr/testing
               ./script.sh
+      - name: SARIF upload - checkout
+        uses: actions/checkout@v4
       - name: Print goodbye
         run: echo "Done - bye!"
