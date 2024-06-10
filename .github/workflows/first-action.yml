@@ -11,6 +11,6 @@ jobs:
               cd /usr/testing
               ./script.sh
       - name: SARIF upload - checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: Print goodbye
         run: echo "Done - bye!"
